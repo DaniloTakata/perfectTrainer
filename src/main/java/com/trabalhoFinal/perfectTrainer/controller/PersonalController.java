@@ -4,11 +4,13 @@ import com.trabalhoFinal.perfectTrainer.domain.Personal;
 import com.trabalhoFinal.perfectTrainer.service.PersonalService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.CrossOrigin;
 
 import java.util.List;
 
 @RestController
 @RequestMapping(value = "personais")
+@CrossOrigin(origins = "http://localhost:3000")
 public class PersonalController {
 
     @Autowired
